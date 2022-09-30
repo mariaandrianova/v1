@@ -143,7 +143,6 @@
       "type": "cash"
     }
   ],
-  "message": "Thank you for your order at Missoma!\nIt will be ready to pick-up today at 16PM.",
   "orders": [
     {
       "success": true,
@@ -174,5 +173,6 @@
         }
       ]
     }
-  ]
+  ],
+    "message": "Thank you for your order at Missoma!\nIt will be ready to pick-up today at 16PM.",
 }
