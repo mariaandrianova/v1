@@ -142,5 +142,41 @@
       "description": "Оплата наличными курьеру при получении заказа",
       "type": "cash"
     }
+  ],
+  "orders": [
+    {
+      "message": "Thank you for your order at Missoma!\nIt will be ready to pick-up today at 16PM.",
+      "orders": [
+        {
+          "success": true,
+          "id": "000123",
+          "publicId": "MI000123",
+          "uuid": "2d81f6e5-01cb-44ca-abb0-ded88c1fc982",
+          "deliveryPrice": 15,
+          "items": [
+            {
+              "name": "Hot Rox Gemstone Stacking Ring",
+              "id": "b8ab37ff-329c-5fb9-8a0b-9337f1d283d7",
+              "privateId": "123",
+              "configurationId": "39759554969703",
+              "price": 129,
+              "quantity": 1,
+              "discount": 0,
+              "subtotal": 129
+            },
+            {
+              "name": "Lucy Williams Chunky Entwine Hoop Earrings",
+              "id": "469eb13a-7f34-5f53-bbdd-87029b18b333",
+              "privateId": "789",
+              "configurationId": "39818431660135",
+              "price": 98,
+              "quantity": 1,
+              "discount": 0,
+              "subtotal": 98
+            }
+          ]
+        }
+      ]
+    }
   ]
 }
