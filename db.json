@@ -1,179 +1,124 @@
 {
-  "delivery-types": [
+  "deliveries": [
     {
-      "deliveries": [
+      "id": "123",
+      "title": "UK Standard Delivery",
+      "hasPickupLocations": false,
+      "description": "Courier delivery, mainland UK only",
+      "type": "delivery",
+      "price": 0,
+      "min": 2,
+      "max": 3,
+      "timeLabel": "2-3 working days",
+      "dateIntervals": [
         {
-          "id": "1234",
-          "title": "UK Standard Delivery",
-          "hasPickupLocations": false,
-          "description": "Courier delivery, mainland UK only",
-          "type": "delivery",
-          "price": 0,
-          "min": 2,
-          "max": 3,
-          "timeLabel": "2-3 working days",
-          "dateIntervals": [
+          "id": "01-10-22",
+          "title": "1 oct",
+          "subTitle": "tomorrow",
+          "timeIntervals": [
             {
-              "id": "01-10-22",
-              "title": "1 oct",
-              "subTitle": "tomorrow",
-              "timeIntervals": [
-                {
-                  "id": "10-15",
-                  "title": "from 10AM to 15PM",
-                  "price": 0
-                },
-                {
-                  "id": "15-18",
-                  "title": "from 15PM to 18PM",
-                  "price": 10
-                }
-              ]
+              "id": "10-15",
+              "title": "from 10AM to 15PM",
+              "price": 0
             },
             {
-              "id": "02-10-22",
-              "title": "2 oct",
-              "subTitle": "the day after tomorrow",
-              "timeIntervals": [
-                {
-                  "id": "10-15",
-                  "title": "from 10AM to 15PM",
-                  "price": 0
-                },
-                {
-                  "id": "15-18",
-                  "title": "from 15PM to 18PM",
-                  "price": 10
-                }
-              ]
+              "id": "15-18",
+              "title": "from 15PM to 18PM",
+              "price": 10
             }
           ]
         },
         {
-          "id": "456",
-          "title": "London Same Day Delivery",
-          "hasPickupLocations": false,
-          "description": "Courier delivery, London zones 1&2 only",
-          "type": "delivery",
-          "price": 12,
-          "min": 0,
-          "timeLabel": "Same day"
-        },
-        {
-          "id": "789",
-          "title": "DPD Pickup",
-          "hasPickupLocations": false,
-          "description": "Delivery to Pickup Point, Main st., 123",
-          "type": "delivery",
-          "price": 0,
-          "min": 1,
-          "max": 2,
-          "timeLabel": "1-2 working days"
-        },
-        {
-          "id": "345",
-          "title": "In-Store Pickup",
-          "hasPickupLocations": true,
-          "description": "Same-day delivery in nearby store",
-          "type": "pickup",
-          "price": 15,
-          "min": 0,
-          "timeLabel": "Same day",
-          "locations": [
+          "id": "02-10-22",
+          "title": "2 oct",
+          "subTitle": "the day after tomorrow",
+          "timeIntervals": [
             {
-              "id": "111",
-              "title": "Store 1",
-              "address": "Лиговский просп., 30",
-              "city": "Санкт-Петербург",
-              "time": "Everyday 10AM - 22PM",
-              "subway": "Маяковская",
-              "mall": "ТРЦ «Галерея»",
-              "lat": "59.927056",
-              "lon": "30.359466",
-              "price": 15,
-              "min": 0,
-              "timeLabel": "Today from 12 PM"
+              "id": "10-15",
+              "title": "from 10AM to 15PM",
+              "price": 0
             },
             {
-              "id": "222",
-              "title": "Store 2",
-              "address": "улица Ефимова, 3С",
-              "city": "Санкт-Петербург",
-              "time": "Monday to Friday 10AM - 20PM",
-              "subway": "Сенная",
-              "mall": "",
-              "lat": "59.925155",
-              "lon": "30.320180",
-              "price": 15,
-              "min": 0,
-              "timeLabel": "Today from 14 PM"
-            },
-            {
-              "id": "333",
-              "title": "Store 3",
-              "address": "Каменноостровский просп., 37",
-              "city": "Санкт-Петербург",
-              "time": "Everyday 10AM - 22PM",
-              "subway": "Петроградская",
-              "mall": "ТРЦ «Дом мод»",
-              "lat": "59.966444",
-              "lon": "30.311421",
-              "price": 15,
-              "min": 1,
-              "timeLabel": "Tomorrow from 10 AM"
+              "id": "15-18",
+              "title": "from 15PM to 18PM",
+              "price": 10
             }
           ]
         }
       ]
-    }
-  ],
-  "payments": [
-    {
-      "id": "34",
-      "title": "Картой онлайн",
-      "description": "Мы принимаем Visa, Maestro, MasterCard",
-      "type": "card"
     },
     {
-      "id": "12",
-      "title": "Оплата при получении",
-      "description": "Оплата картой или наличными курьеру при получении заказа",
-      "type": "card_on_delivery"
+      "id": "456",
+      "title": "London Same Day Delivery",
+      "hasPickupLocations": false,
+      "description": "Courier delivery, London zones 1&2 only",
+      "type": "delivery",
+      "price": 12,
+      "min": 0,
+      "timeLabel": "Same day"
     },
     {
-      "id": "56",
-      "title": "Наличными при получении",
-      "description": "Оплата наличными курьеру при получении заказа",
-      "type": "cash"
-    }
-  ],
-  "orders": [
+      "id": "789",
+      "title": "DPD Pickup",
+      "hasPickupLocations": false,
+      "description": "Delivery to Pickup Point, Main st., 123",
+      "type": "delivery",
+      "price": 0,
+      "min": 1,
+      "max": 2,
+      "timeLabel": "1-2 working days"
+    },
     {
-      "success": true,
-      "id": "000123",
-      "publicId": "MI000123",
-      "uuid": "2d81f6e5-01cb-44ca-abb0-ded88c1fc982",
-      "deliveryPrice": 15,
-      "items": [
+      "id": "345",
+      "title": "In-Store Pickup",
+      "hasPickupLocations": true,
+      "description": "Same-day delivery in nearby store",
+      "type": "pickup",
+      "price": 15,
+      "min": 0,
+      "timeLabel": "Same day",
+      "locations": [
         {
-          "name": "Hot Rox Gemstone Stacking Ring",
-          "id": "b8ab37ff-329c-5fb9-8a0b-9337f1d283d7",
-          "privateId": "123",
-          "configurationId": "39759554969703",
-          "price": 129,
-          "quantity": 1,
-          "discount": 0,
-          "subtotal": 129
+          "id": "111",
+          "title": "Store 1",
+          "address": "Лиговский просп., 30",
+          "city": "Санкт-Петербург",
+          "time": "Everyday 10AM - 22PM",
+          "subway": "Маяковская",
+          "mall": "ТРЦ «Галерея»",
+          "lat": "59.927056",
+          "lon": "30.359466",
+          "price": 15,
+          "min": 0,
+          "timeLabel": "Today from 12 PM"
         },
         {
-          "name": "Lucy Williams Chunky Entwine Hoop Earrings",
-          "id": "469eb13a-7f34-5f53-bbdd-87029b18b333",
-          "privateId": "789",
-          "configurationId": "39818431660135",
-          "price": 98,
-          "quantity": 1,
-          "discount": 0,
-          "subtotal": 98
+          "id": "222",
+          "title": "Store 2",
+          "address": "улица Ефимова, 3С",
+          "city": "Санкт-Петербург",
+          "time": "Monday to Friday 10AM - 20PM",
+          "subway": "Сенная",
+          "mall": "",
+          "lat": "59.925155",
+          "lon": "30.320180",
+          "price": 15,
+          "min": 0,
+          "timeLabel": "Today from 14 PM"
+        },
+        {
+          "id": "333",
+          "title": "Store 3",
+          "address": "Каменноостровский просп., 37",
+          "city": "Санкт-Петербург",
+          "time": "Everyday 10AM - 22PM",
+          "subway": "Петроградская",
+          "mall": "ТРЦ «Дом мод»",
+          "lat": "59.966444",
+          "lon": "30.311421",
+          "price": 15,
+          "min": 1,
+          "timeLabel": "Tomorrow from 10 AM"
         }
       ]
     }
